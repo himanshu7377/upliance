@@ -1,0 +1,16 @@
+.textEditor{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 45%;
+    /* height: 300px; */
+    text-align: center;
+    padding: 30px 0px;
+    min-width: 350px;
+}
+.jeditor{
+    background: transparent;
+    color: black;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px 10px;
+}
