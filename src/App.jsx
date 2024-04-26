@@ -6,9 +6,9 @@ import UserForm from './UserForm/UserForm';
 import TextEditor from './TextEditor/TextEditor';
 import SignInPage from './Signin/SignInPage.jsx'
 import SignUpPage from './SignUpPage';
-// import LoginPage from './LoginPage';
+import Navbar from './Navbar/Navbar.jsx';
 import Dashboard from './Dashboard/Dashboard.jsx';
-// import PrivateRoute from './PrivateRoute'; // Import the PrivateRoute component
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import RequireAuth from './RequireAuth.jsx';
@@ -41,12 +41,15 @@ function App() {
             path="/dashboard"
             element={
               // <RequireAuth>
+             
                 <Dashboard />
+              
               // </RequireAuth>
             }
           />
           <Route path="/" element={
             <>
+            <Navbar/>
               <Counter count={count} change={setCount} />
               <TextEditor />
               <UserForm users={userList} saveUser={setUserList} />
