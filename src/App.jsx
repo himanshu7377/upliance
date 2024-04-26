@@ -40,7 +40,7 @@ function App() {
         <Route
             path="/dashboard"
             element={
-              // <RequireAuth>
+              <RequireAuth>
              
                 <Dashboard />
               
@@ -49,9 +49,9 @@ function App() {
           />
           <Route path="/" element={
             <>
-            <Navbar/>
               <Counter count={count} change={setCount} />
               <TextEditor />
+            <Navbar/>
               <UserForm users={userList} saveUser={setUserList} />
               <Background level={count} />
             </>

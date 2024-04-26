@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from './Counter.module.css';
 export default function Counter({ count, change }) {
 

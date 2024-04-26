@@ -8,13 +8,13 @@ const SignInPage = () => {
   const handleSuccess = (response) => {
     // Handle successful sign-in
     console.log("Successful sign-in:", response);
-    // You can redirect the user to another page or perform other actions after successful sign-in
+    
   };
 
   const handleFailure = (error) => {
     // Handle sign-in failure
     console.error("Sign-in error:", error);
-    // You can display an error message to the user or log the error for debugging
+    
   };
 
   return (

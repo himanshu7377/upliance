@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { auth } from '../firebase.js'; // Assuming you have Firebase authentication set up
+import { auth } from '../firebase.js'; 
 import { useNavigate } from 'react-router';
-import { Bar } from 'react-chartjs-2'; // Import the Bar component from react-chartjs-2
+import { Bar } from 'react-chartjs-2'; 
 import './Dashboard.css';
 import Chart from 'chart.js/auto';
 import { CategoryScale, LinearScale } from "chart.js";
