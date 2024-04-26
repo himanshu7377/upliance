@@ -7,7 +7,7 @@ import TextEditor from './TextEditor/TextEditor';
 import SignInPage from './SignInPage';
 import SignUpPage from './SignUpPage';
 // import LoginPage from './LoginPage';
-import Dashboard from './Dashboard';
+import Dashboard from './Dashboard/Dashboard.jsx';
 // import PrivateRoute from './PrivateRoute'; // Import the PrivateRoute component
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
