@@ -21,6 +21,7 @@ function App() {
   });
 
   const [userList, setUserList] = useState([]);
+  const [savedUser, setSavedUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('count', count);
@@ -29,6 +30,20 @@ function App() {
   useEffect(() => {
     localStorage.setItem('userList', JSON.stringify(userList));
   }, [userList]);
+
+    // Define saveUser function
+    const saveuser = (userData) => {
+      setUserList(userData);
+      setSavedUser(userData[userData.length - 1]); // Save the last user in the list
+  };
+
+     // Define curruser function
+  const curruser = (user) => {
+    console.log('Current user:', user);
+    setSavedUser(user);
+   
+    // Implement any logic you need with the current user
+  };
 
   return (
     <Router>
@@ -50,9 +65,9 @@ function App() {
           <Route path="/" element={
             <>
               <Counter count={count} change={setCount} />
-              <TextEditor />
+              <TextEditor curruser={savedUser} />
             <Navbar/>
-              <UserForm users={userList} saveUser={setUserList} />
+              <UserForm users={userList} saveuser={saveuser} curruser={curruser} />
               <Background level={count} />
             </>
           } />
