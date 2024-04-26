@@ -4,7 +4,7 @@ import Counter from './Counter/Counter';
 import Background from './Background/Background';
 import UserForm from './UserForm/UserForm';
 import TextEditor from './TextEditor/TextEditor';
-import SignInPage from './SignInPage';
+import SignInPage from './Signin/SignInPage.jsx'
 import SignUpPage from './SignUpPage';
 // import LoginPage from './LoginPage';
 import Dashboard from './Dashboard/Dashboard.jsx';

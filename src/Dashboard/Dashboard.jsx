@@ -68,6 +68,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     try {
       await auth.signOut();
+    
     } catch (error) {
       console.error('Logout error:', error);
     }
